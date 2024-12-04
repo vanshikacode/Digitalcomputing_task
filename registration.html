@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGISTRATION FORM</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: rgb(72, 10, 228);
+    
+        }
+        
+        #login {
+            background-color: rgb(12, 222, 230);
+            border: solid 4px BLACK;
+            border-radius: 8%;
+            padding: 50PX;
+            border-top: solid 2px rgb(57, 44, 238);
+        }
+    
+        .mt-10 {
+            margin-top: 10px;
+    
+        }
+        .h1{
+            color: aliceblue;
+            background-color: rgb(120, 22, 231);
+            border: solid 1px BLACK;
+            border-radius: 16px;
+            height: 70px;
+            width: 400px;
+            text-align: center;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+    
+        }
+        </style>
+</head>
+<body>
+    
+    <div class="flex justify-center">
+    
+        <div id="login">
+            <h1 class="h1">Student Registration Form </h1>
+        <br><br><br><br><table>
+       <tbody><tr> 
+        <td class="cc">Name:</td>
+        <td> <input type="text" class="mt-10" name="Student Name" size="15" placeholder="name" maxlength="30px"></td>
+      </tr>
+      <tr>
+        <td class="cc">Father Name:</td>
+        <td>  <input type="text" class="mt-10" name="father name" size="15" placeholder="father name" maxlength="30px"></td>
+    </tr>
+    <tr>
+        <td class="cc"> Mother Name:</td>
+        <td><input type="text" class="mt-10" name="mother name" size="15" placeholder="mother name" maxlength="30px"></td>
+    </tr>
+    <tr>
+      <td class="cc">Email:</td> 
+        <td><input type="text" class="mt-10" name=" email" size="15" placeholder="email" maxlength="30px"></td>
+    </tr>
+    <tr>
+       <td>Password:</td>
+        <td><input class="mt-10" type="password" placeholder="password" name="password"></td></tr>  
+        <tr>
+      <td>Date of birth:</td> 
+       <td> <input class="mt-10" type="date" placeholder="date" name="date"> </td>
+    </tr>
+    <tr>
+    <td>Mobile Number:</td>
+    <td><input class="mt-10" type="number" placeholder="number" name="number"></td>
+    </tr>
+    </tbody></table>
+    <div>
+        <tbody>Gender:</tbody>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input id="gender" name="gender"  type="radio" class="mt-10">
+    Male
+</input>
+<input  id="gender"  name="gender" type="radio" class="mt-10">
+        Female
+</input>
+<input  id="gender"  name="gender" type="radio" class="mt-10">
+        Other
+</input>
+</div><br>
+<div>
+       
+    
+        <button style="background-color: rgb(218, 244, 17);">Submit</button>
+    </div>
+    
+    
+        </div>
+    
+</body>
+</html>
