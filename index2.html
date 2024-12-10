@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .html{
+        scroll-behavior: smooth;
+      }
+      .p-4{
+          padding: 1rem;
+      }
+      .bg-blue-100{
+          opacity: 1;
+          background-color: rgba(219,  234,  254, 1);
+      }
+      .flex{
+          display: flex;
+      }
+      .justify-between{
+          justify-content: space-between;
+      }
+      .gap-4{
+          gap: 1rem;
+      }
+      .grid-cols-4{
+          grid-template-columns: repeat(4, minmax(0, 1fr));
+      }
+      .grid{
+          display: grid;
+      }
+      .navbar  {
+        position: sticky;
+        align-items: center;
+
+        margin-right: 0px;
+        display: flex;
+        list-style: none;
+        background-color: black;
+        justify-content: end;
+
+        H1 {
+          color: white;
+          display: flex;
+          align-items: center;
+          justify-self: left;
+          margin-inline-end: 66%;
+       
+        }
+
+      }
+      button{
+          border: 2px solid green;
+          font-weight: bolder;
+          border-radius:2px;
+          background-color:white;
+          font-size: 2rem;
+        
+      
+
+
+      }
+      button2{
+        border: 2px solid black;
+        border-radius: 18%;
+        font-style: italic;
+        background-color: rgb(250, 157, 188);
+        padding: 0.5rem;
+        margin-inline-start: 0%;
+
+
+      }
+      .navbar li{
+        list-style: none;
+        display: flex ;
+        align-items: center;
+
+
+
+      }
+      .HOME {
+        height: 600px;
+      }
+      .ABOUT {
+        height: 600px;
+      }
+       .PROJECTS {
+        height: 600px;
+      }
+       .CONTACT {
+        height: 600px;
+       }
+
+    </style>
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <h1>MY PORTFOLIO</h1>
+
+      <ul>
+        <li>
+          <button2> <a href="#HOME">HOME</a> </button2>&nbsp;&nbsp;&nbsp;
+          <button2> <a href="#ABOUT">ABOUT</a></button2
+          >&nbsp;&nbsp;&nbsp; <button2> <a href="#PROJECTS">PROJECTS</a></button2
+          >&nbsp;&nbsp;&nbsp;
+          <button2> <a href="#CONTACT">CONTACT</a></button2
+        </li>
+      </ul>
+    </nav>
+    <div class="HOME">
+      <h1>HOME</h1>
+    </div>
+    <div class="ABOUT">
+      <h1>ABOUT</h1>
+    </div>
+    <div class="PROJECTS">
+      <h1>PROJECTS</h1>
+    </div>
+   
+   
+    <div class="bg-blue-100 p-4 flex justify-between">
+      <h1>Vanshika Tiwari</h1>
+      <h2>Digital Computing® - SDITS</h2>
+    </div>
+    <div class="grid grid-cols-4 gap-4">
+      <div class="p-4 rounded-2xl shadow">
+        <a href="tail calc.html"><button>Calculator</button></a>
+      </div>
+      <div class="p-4 rounded-2xl shadow">
+        <a href="LINKEDIN.html"><button>LinkedIn</button></a>
+      </div>
+      <div class="p-4 rounded-2xl shadow">
+        <a href="youtube.html"><button>YouTube</button></a>
+      </div>
+      <div class="p-4 rounded-2xl shadow">
+        <a href="FACEBOOK.html"><button>FaceBook</button></a>
+      </div>
+      <div class="p-4 rounded-2xl shadow">
+        <a href="registration.html"><button>Registration Form</button></a>
+      </div>
+      <div class="p-4 rounded-2xl shadow">
+        <a href="Whatsapp.html"><button>WhatsApp</button></a>
+      </div>
+    </div>
+    <div class="CONTACT">
+      <h1>CONTACT</h1>
+    </div>
+  </body>
+</html>
