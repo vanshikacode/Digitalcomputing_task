@@ -7,6 +7,7 @@
     <style>
       .html{
         scroll-behavior: smooth;
+        background-color: black;
       }
       .p-4{
           padding: 1rem;
@@ -31,8 +32,10 @@
           display: grid;
       }
       .navbar  {
-        position: sticky;
+       
         align-items: center;
+        position: sticky;
+        top: 0%;
 
         margin-right: 0px;
         display: flex;
@@ -79,23 +82,87 @@
 
 
       }
-      .HOME {
-        height: 600px;
+      #HOME {
+        height: 800px;
+        color: white;
+        background-color: rgb(3, 3, 139);
+      
       }
-      .ABOUT {
-        height: 600px;
+      .box {
+        color: black;
+        animation: van 5s infinite alternate-reverse forwards;
       }
-       .PROJECTS {
-        height: 600px;
+      @keyframes van{
+        to{
+          top: 30%;
+          width: 40%;
+          height: 10%;
+          font-size: 60px; margin-left: 20%;
+          color: white;
+        }
+        from{
+          top: 80%;
+          width: 50%;
+          height: 50%;
+          font-size: 60%;
+          margin-left: 60%;
+         
+        }
       }
-       .CONTACT {
+      #ABOUT {
         height: 600px;
+        color: white;
+        background-color: rgb(3, 58, 106); 
+       
+      }
+      .hel{
+        border: 2px solid black;
+        border-radius: 100%;
+        animation: van 5s infinite alternate-reverse forwards;
+      }
+      @keyframes van{
+        to{
+          top: 0;
+          width: 50%;
+          height: 50%;
+         margin-left: 20%;
+          color: white;
+        }
+        from{
+          top: 50px;
+          width: 80px;
+          height: 80px;
+          
+          margin-left: 60%;
+         
+        }
+      }
+       #PROJECTS {
+        height: 600px;
+        color: white;
+        background-color: rgb(1, 33, 60);
+      }
+      #CONTACT {
+        height: 600px;
+        color: white;
+        background-color: rgb(1, 22, 40);
+       }
+       .box1{
+        background-color: black;
+        border-radius: 100%;
+        border-color: azure;
+        size: 10%;
+       }
+       .box2{
+        background-color: yellow;
+        border-radius: 100%;
+        border-color: black;
        }
 
     </style>
   </head>
 
-  <body>
+  <body class="html">
     <nav class="navbar">
       <h1>MY PORTFOLIO</h1>
 
@@ -109,13 +176,17 @@
         </li>
       </ul>
     </nav>
-    <div class="HOME">
-      <h1>HOME</h1>
+    <section id="HOME">
+    <div   class="box">
+      <h1>This is my <br> PORTFOLIO</h1> 
+      
     </div>
-    <div class="ABOUT">
+  </section>
+    <div id="ABOUT">
       <h1>ABOUT</h1>
+      <img src="OIP (8).jpg"  class="hel">
     </div>
-    <div class="PROJECTS">
+    <div id="PROJECTS">
       <h1>PROJECTS</h1>
     </div>
    
@@ -144,7 +215,7 @@
         <a href="Whatsapp.html"><button>WhatsApp</button></a>
       </div>
     </div>
-    <div class="CONTACT">
+    <div id="CONTACT">
       <h1>CONTACT</h1>
     </div>
   </body>
