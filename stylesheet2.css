@@ -1,0 +1,435 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+html {
+    scroll-behavior: smooth;
+    background-color: #e80fe1;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    align-items: center;
+    position: sticky;
+    top: 0;
+
+}
+
+.navbar::before {
+    content: "";
+    position: absolute;
+  background-color: black;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar ul li {
+    font-size: 1.1rem
+}
+
+.navbar ul li a {
+    padding: 5px 20px;
+    color: white;
+    text-decoration: none;
+    border-style: groove;
+    border-color: rgb(138, 5, 246);
+    border-radius: 30rem;
+    margin: 1rem;
+}
+
+h3 {
+    color: white;
+    padding-left: 50%;
+    margin-right: 10px;
+
+}
+
+.navbar ul li a:hover {
+    border-style: groove;
+    border-color: rgb(238, 5, 246);
+    border-radius: 30rem;
+}
+
+#home {
+    display: flex;
+    flex-direction: column;
+    height: 800px;
+    
+   
+    justify-content: center;
+    align-items: center;
+    
+   
+    
+        font-family: "Abril Fatface", serif;
+        font-weight: 800;
+        font-style: oblique;
+        margin-left: 1rem;
+      
+      
+    color: #f11075;
+    font-size: 300%;
+   
+}
+
+#home::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 800px;
+    width: 100%;
+    background: url(black-eye-cyber-circuit-future-technology-concept-background-vector2.jpg);
+    z-index: -1;
+    opacity: none;
+   
+}
+.typing{
+    color: white;
+    border-right: .15rem solid orange;
+    font-size: 2rem;
+    width: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 10s steps(60)  infinite  alternate ;
+}
+@keyframes typing{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 29%;
+        
+    }
+}
+
+
+
+/* about me  */
+
+#about{
+    display: grid;
+    justify-content: center;
+    
+    height: 800px;
+    color: white;
+}
+
+#about::before{
+    content: "";
+    position: absolute;
+    background-image: linear-gradient(#f11075,#6d0fe8);
+    z-index: -1;
+    background-image: linear-gradient(#e80fe1,#3103e9);
+    z-index: -1; 
+    opacity: none;
+    height: 800px;
+    width: 100%;
+}
+#box1 {
+ 
+    font-family: "Abril Fatface", serif;
+    font-weight: 800;
+    margin-top: 50px;
+    font-style: oblique;
+    font-size: 400%;
+    display: flex;
+    justify-content: center;
+
+}
+.about {
+    display: flex;
+    color: white;
+}
+
+.about {
+    color: white;
+   
+    
+    font-family: "Libre Caslon Text", serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: large;
+}
+
+
+
+
+.about h2 {
+    font-family: "Libre Caslon Text", serif;
+    font-weight: 400;
+    font-style: italic;
+    margin-bottom: 2rem;
+    display: grid;
+  
+
+}
+
+
+
+
+
+
+/* project */
+
+#projects {
+    
+    font-size: x-large;
+    height: 800px;
+    width: 100%;
+    
+
+
+    display: flex;
+    
+    align-items: center;
+    flex-direction: column;
+    border: none;
+   
+    margin-bottom: 0%;
+    background-image: linear-gradient(#5b595b,#09010a);
+    z-index: -1; 
+    opacity: none;
+
+}
+#myprojects {
+   
+    font-family: "Libre Caslon Text", serif;
+    font-size: 300%;
+    margin-top: 50px;
+    font-family: "Abril Fatface", serif;
+    font-weight: 800;
+    font-style: oblique;
+    margin-left: 1rem;
+    
+}
+
+
+
+#projects::before {
+    content: "";
+    position: absolute;
+    background-color: black;
+    height: 50px;
+    width: 100%;
+    z-index: -1;
+
+}
+
+#myprojects{
+    color: white;
+    padding-bottom: 40px;
+    font-family: "Libre Caslon Text", serif;
+    font-weight: 400;
+    font-style: italic;
+   
+}
+#html{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 2fr));
+    
+   grid-gap: 5rem;
+   margin-left: 60px;
+}
+
+
+
+   
+   
+
+#project1 a button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15rem;
+    height: 5rem;
+    
+    padding: 5px 10px;
+    font-family: "Libre Caslon Text", serif;
+    font-weight: 400;
+    font-style: italic;
+    margin-left: 20px;
+    background-color: white;
+    border-radius: 10px;
+    font-size: 2rem;
+}
+#project1 a button:hover{
+    background-color:  rgb(238, 5, 246);
+    box-shadow: 10px 10px #130108;
+}
+
+#project2 a button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15rem;
+    height: 5rem;
+    padding: 5px 10px;
+    font-family: "Libre Caslon Text", serif;
+    font-weight: 400;
+    font-style: italic;
+    margin-left: 20px;
+    font-size: 2rem;
+    background-color: white;
+    border-radius: 10px;
+}
+#project2 a button:hover{
+    background-color:  rgb(238, 5, 246);
+    box-shadow: 10px 10px #130108;
+}
+
+
+
+
+#project3 a button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15rem;
+    height: 5rem;
+    padding: 5px 10px;
+    font-family: "Libre Caslon Text", serif;
+    font-weight: 400;
+    font-style: italic;
+    margin-left: 20px;
+    font-size: 2rem;
+    background-color: white;
+    border-radius: 10px;
+}
+#project3 a button:hover{
+    background-color:  rgb(238, 5, 246);
+    box-shadow:10px 10px #130108;
+}
+
+
+#project4 a button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15rem;
+    height: 5rem;
+    padding: 5px 10px;
+    font-size: 2rem;
+    margin-left: 20px;
+    font-family: "Libre Caslon Text", serif;
+    font-weight: 400;
+    font-style: italic;
+    background-color: white;
+    border-radius: 10px;
+}
+#project4 a button:hover{
+    background-color:  rgb(238, 5, 246);
+    box-shadow: 10px 10px #130108 ;
+}
+
+
+
+
+
+#project5 a button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15rem;
+    height: 5rem;
+    padding: 5px 10px;
+   font-size: 2rem;
+    margin-left: 20px;
+    font-family: "Libre Caslon Text", serif;
+    font-weight: 400;
+    font-style: italic;
+    background-color: white;
+    border-radius: 10px;
+}
+#project5 a button:hover{
+    background-color:  rgb(238, 5, 246);
+    box-shadow: 10px 10px #130108 ;
+}
+
+
+#project6 a button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15rem;
+    height: 5rem;
+    background-color: white;
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin-left: 20px;
+    font-size: 2rem;
+    font-family: "Libre Caslon Text", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+#project6 a button:hover{
+    background-color:  rgb(238, 5, 246);
+    box-shadow: 10px 10px #130108 ;
+}
+
+
+/*reach uc*/
+#reach {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(#e80fe1,#3103e9);
+    color: white;
+    font-family: "Libre Caslon Text", serif;
+    font-weight: 400;
+    font-style: italic;
+   
+    height: 650px;
+   
+    
+}
+#reach::before {
+    background-image: linear-gradient(#e80fe1,#3103e9);
+    opacity: none;
+    z-index: -1;
+}
+#use{
+    font-size: 4rem;
+   
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 5px 20px;
+    background-color: rgb(249, 246, 246);
+    color: #6d0fe8;
+}
+
+#submit:hover {
+    background-color: rgba(235, 146, 251, 0.984);
+}
+
+.form:hover {
+    box-shadow: 5px 5px #131212;
+
+}
+.kri {
+    display: flex;
+
+}
+
