@@ -402,6 +402,7 @@ h3 {
     background-image: linear-gradient(#e80fe1,#3103e9);
     opacity: none;
     z-index: -1;
+    height: 650px;
 }
 #use{
     font-size: 4rem;
