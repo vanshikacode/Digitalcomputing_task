@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAGE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Pacifico", serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        body {
+            height: 100vh;
+            background: url(copyrealistic-coffee-background-with-drawings_157027-1112.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 20px;
+            cursor: pointer;
+        }
+        .sidenav {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: black;
+        }
+        .sidenav a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: white;
+            display: block;
+            transition: 0.2s;
+            
+        }
+        .sidenav a:hover {
+            color: rgb(114, 64, 4);
+        }
+        .sidenav .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 35px;
+            margin-left: 50px;
+        }
+        .herosection {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+           padding: 0 20px;
+        }
+        .herosection .container {
+            color: white;
+            max-width: 1200px;
+            width: 100%;
+            margin: auto;
+        }
+        .herosection .container h1 {
+            font-size: 3rem;
+            max-width: 600px;
+        }
+        .herosection .container p {
+            font-weight: 300;
+            margin-top: 15px;
+            max-width: 600px;
+        }
+        .herosection .container button {
+            background: white;
+            outline: auto;
+            border: none;
+            font-size: 1rem ;
+            font-weight: 500;
+            margin-top: 38px;
+            padding: 12px 30px;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+        .herosection .container button:hover {
+            color: rgb(114, 64, 4);
+            background: rgb(219, 123, 5);
+        }
+        header Menu {
+            color: white;
+            cursor: pointer;
+            display: none;
+        }
+        #close-menu-btn {
+            display: none;
+            position: absolute;
+            right: 20px;
+            top: 20px;
+            cursor: pointer;
+        }
+        @media screen and (max-width: 900px){
+            .sidenav a {
+                color: white;
+            }
+            .herosection .container {
+                text-align: center;
+            }
+            .herosection .container :is(h1;)
+            
+        }
+        
+
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <div id="mysidenave" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="">Home</a>
+            <a href="">About&nbsp;Us</a>
+            <a href="">Products</a>
+            <a href="">Contact&nbsp;Us</a>
+        </div>
+        <span onclick="openNave()">Menu</span>
+    </header>
+    <section class="herosection">
+        <div class="container">
+            <h1>Start Your Day With Fresh Coffee☕</h1>
+            <p>Coffee is a popular and beloved beverage enjoyed by people around the <br>
+                world. Awaken your sense with a steaming cup of liquid mativation.</p>
+            <button id="contactbtn">Order Now</button>
+        </div>
+    </section>
+    <script>
+
+    </script>
+
+</body>
+
+</html>
