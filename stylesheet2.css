@@ -381,6 +381,27 @@ h3 {
     box-shadow: 10px 10px #130108 ;
 }
 
+#project7 a button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15rem;
+    height: 5rem;
+    background-color: white;
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin-left: 20px;
+    font-size: 2rem;
+    font-family: "Libre Caslon Text", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+#project6 a button:hover{
+    background-color:  rgb(238, 5, 246);
+    box-shadow: 10px 10px #130108 ;
+}
+
+
 
 /*reach uc*/
 #reach {
